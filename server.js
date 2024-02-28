@@ -28,7 +28,7 @@ app.get('/',function (req, res) {
  const menuItemRoutes = require('./routes/menuItemRoutes');
 
 // Use the router
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);
 app.use('/menu', menuItemRoutes);
 
 app.listen(PORT, ()=>{
